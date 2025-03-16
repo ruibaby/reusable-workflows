@@ -107,7 +107,7 @@ jobs:
           name: artifacts
           path: ${{ inputs.artifacts-path }}
       - name: Release to App Store
-        uses: halo-sigs/app-store-release-action@v3
+        uses: ruibaby/app-store-release-action@refactor-action
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           app-id: ${{ inputs.app-id }}
